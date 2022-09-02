@@ -36,7 +36,7 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: openshift-gitops
     server: https://kubernetes.default.svc
-   - namespace: argocd
+  - namespace: argocd
     server: https://kubernetes.default.svc
   - namespace: openshift-serverless
     server: https://kubernetes.default.svc
