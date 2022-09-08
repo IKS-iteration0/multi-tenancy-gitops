@@ -36,7 +36,7 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: openshift-gitops
     server: https://kubernetes.default.svc
-  - namespace: argocd
+  - namespace: k8s-gitops
     server: https://kubernetes.default.svc
   - namespace: openshift-serverless
     server: https://kubernetes.default.svc
@@ -110,7 +110,7 @@ metadata:
     gitops.tier.layer: gitops
 spec:
   destination:
-    namespace: argocd
+    namespace: k8s-gitops
     server: https://kubernetes.default.svc
   project: infra
   source: # repoURL  and targetRevision populated by kustomize patches in 1-infra/kustomization.yaml
