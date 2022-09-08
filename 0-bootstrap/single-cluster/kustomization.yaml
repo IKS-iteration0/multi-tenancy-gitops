@@ -66,4 +66,4 @@ patches:
   patch: |-
     - op: replace
       path: /spec/destination/namespace
-      value: argocd
+      value: k8s-gitops
